@@ -84,35 +84,6 @@
     - `calendar_db`: 공휴일·기념일 조회
     - `search`: 특정 이벤트(콘서트 등) 날짜 검색
 
----
-
-## Setup
-
-### Requirements
-
-- Python 3.10+
-- 의존 패키지는 `requirements.txt` (또는 각 스크립트의 `import` 문) 기준으로 설치:
-
-```bash
-pip install -r requirements.txt
-```
-
-### API Keys
-
-실험에 사용한 LLM 예시:
-
-- OpenAI GPT 계열: `OPENAI_API_KEY`
-- Upstage SOLAR 계열: `UPSTAGE_API_KEY`
-
-```bash
-export OPENAI_API_KEY="YOUR_KEY"
-export UPSTAGE_API_KEY="YOUR_KEY"
-```
-
-(실제로 사용하는 모델/환경 변수 이름에 맞게 수정하세요.)
-
----
-
 ## How to Run
 
 아래는 기본 실행 예시입니다.  
@@ -131,5 +102,3 @@ python t3.py
 # Task 3 (LLM ReAct agent)
 python t3_llm.py
 ```
-
-실행 결과는 `results/<model_name>/` 하위 폴더에 저장되도록 구성할 수 있습니다.
